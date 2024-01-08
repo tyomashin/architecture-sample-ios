@@ -1,6 +1,6 @@
 ---
 name: ADD_TASK
-about: タスクオン追加
+about: タスクを追加
 title: ''
 labels: ''
 assignees: ''
