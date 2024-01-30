@@ -26,17 +26,22 @@ iOS アプリ開発で使用するためのアーキテクチャサンプルを�
 
 ## GitHub Issue/PR の Templetes
 
-Issue や PR 作成時に、入力の手間を省くための雛形を作成できる。  
+Issue や PR 作成時に、入力の手間を省くための雛形を作成できる。
+
 以下公式ドキュメントに詳細が記載されている。  
+
 https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
 
 ## GitHub Projects によるタスク管理・ガントチャート
 
 GitHub Projects を使用してタスク管理する。
+
 Project には Issue や PR をアイテムとして紐づけることができ、
+
 開始日・終了日や、アイテムのステータスを管理できる。
 
 詳細は以下の Notion でまとめている。
+
 https://www.notion.so/GitHub-Projects-f2aaaa6eb38245c8afd97d5071741bb2
 
 ## GitHub Actions による CI/CD 実践
