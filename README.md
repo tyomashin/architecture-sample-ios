@@ -26,8 +26,8 @@ iOS アプリ開発で使用するためのアーキテクチャサンプルを�
 
 ## GitHub Issue/PR の Templetes
 
-Issue や PR 作成時に、入力の手間を省くための雛形を作成できる。
-以下公式ドキュメントに詳細が記載されている。
+Issue や PR 作成時に、入力の手間を省くための雛形を作成できる。  
+以下公式ドキュメントに詳細が記載されている。  
 https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
 
 ## GitHub Projects によるタスク管理・ガントチャート
