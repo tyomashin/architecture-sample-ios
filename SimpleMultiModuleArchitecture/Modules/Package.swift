@@ -4,5 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "Modules"
+    name: "Modules",
+    platforms: [
+        .iOS("17.0")
+    ],
+    products: [
+        .library(name: "MainApp", targets: ["MainApp"]),
+    ],
+    targets: [
+        .target(
+            name: "MainApp",
+            dependencies: [
+                "Presentation"
+            ]
+        ),
+        .target(
+            name: "Presentation",
+            dependencies: []
+        ),
+    ]
 )
