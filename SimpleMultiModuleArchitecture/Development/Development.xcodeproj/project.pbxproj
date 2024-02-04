@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7B1170B62B6DFE9D00F6515F /* MainApp in Frameworks */ = {isa = PBXBuildFile; productRef = 7B1170B52B6DFE9D00F6515F /* MainApp */; };
 		7B83AEBF2B4BCFAE00CD58F8 /* DevelopmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AEBE2B4BCFAE00CD58F8 /* DevelopmentApp.swift */; };
-		7B83AEC12B4BCFAE00CD58F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AEC02B4BCFAE00CD58F8 /* ContentView.swift */; };
 		7B83AEC32B4BCFB100CD58F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B83AEC22B4BCFB100CD58F8 /* Assets.xcassets */; };
 		7B83AEC72B4BCFB100CD58F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B83AEC62B4BCFB100CD58F8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		7B83AEBB2B4BCFAE00CD58F8 /* Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Development.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B83AEBE2B4BCFAE00CD58F8 /* DevelopmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentApp.swift; sourceTree = "<group>"; };
-		7B83AEC02B4BCFAE00CD58F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B83AEC22B4BCFB100CD58F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B83AEC42B4BCFB100CD58F8 /* Development.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Development.entitlements; sourceTree = "<group>"; };
 		7B83AEC62B4BCFB100CD58F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				7B83AEBE2B4BCFAE00CD58F8 /* DevelopmentApp.swift */,
-				7B83AEC02B4BCFAE00CD58F8 /* ContentView.swift */,
 				7B83AEC22B4BCFB100CD58F8 /* Assets.xcassets */,
 				7B83AEC42B4BCFB100CD58F8 /* Development.entitlements */,
 				7B83AEC52B4BCFB100CD58F8 /* Preview Content */,
@@ -110,7 +107,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					7B83AEBA2B4BCFAE00CD58F8 = {
 						CreatedOnToolsVersion = 15.1;
@@ -152,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B83AEC12B4BCFAE00CD58F8 /* ContentView.swift in Sources */,
 				7B83AEBF2B4BCFAE00CD58F8 /* DevelopmentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +190,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -255,6 +252,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -282,6 +280,7 @@
 				CODE_SIGN_ENTITLEMENTS = Development/Development.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Development/Preview Content\"";
 				DEVELOPMENT_TEAM = 38BV25GUUS;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -321,6 +320,7 @@
 				CODE_SIGN_ENTITLEMENTS = Development/Development.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Development/Preview Content\"";
 				DEVELOPMENT_TEAM = 38BV25GUUS;
 				ENABLE_HARDENED_RUNTIME = YES;
