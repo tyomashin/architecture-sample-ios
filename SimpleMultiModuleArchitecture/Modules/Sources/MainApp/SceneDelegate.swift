@@ -1,6 +1,7 @@
 // Created by okazakishinya on 2024/02/03.
 
 import UIKit
+import Presentation
 
 open class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -12,10 +13,7 @@ open class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         self.window = window
 
-
-        // TODO: ルート画面を設定する
-        let vc = UIViewController()
-        window.rootViewController = vc
+        window.rootViewController = RootViewController(presenter: RootPresenter())
         window.makeKeyAndVisible()
     }
 }

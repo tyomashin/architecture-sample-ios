@@ -10,6 +10,7 @@ let package = Package(
     ],
     products: [
         .library(name: "MainApp", targets: ["MainApp"]),
+        .library(name: "Presentation", targets: ["Presentation"]),
     ],
     targets: [
         .target(
