@@ -13,7 +13,10 @@ open class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         self.window = window
 
-        window.rootViewController = RootViewController(presenter: RootPresenter())
+        let router = RootRouter()
+        let vc = RootViewController(presenter: RootPresenter(router: router))
+        router.viewController = vc
+        window.rootViewController = vc
         window.makeKeyAndVisible()
     }
 }
