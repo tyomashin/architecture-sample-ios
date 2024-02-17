@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1170B92B6E004900F6515F /* MainApp in Frameworks */ = {isa = PBXBuildFile; productRef = 7B1170B82B6E004900F6515F /* MainApp */; };
 		7B83AEDA2B4BD0CF00CD58F8 /* ProductionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AED92B4BD0CF00CD58F8 /* ProductionApp.swift */; };
 		7B83AEDC2B4BD0CF00CD58F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AEDB2B4BD0CF00CD58F8 /* ContentView.swift */; };
 		7B83AEDE2B4BD0D100CD58F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B83AEDD2B4BD0D100CD58F8 /* Assets.xcassets */; };
@@ -27,17 +28,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1170B92B6E004900F6515F /* MainApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B1170B72B6E004900F6515F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B83AECD2B4BD0CF00CD58F8 = {
 			isa = PBXGroup;
 			children = (
 				7B83AED82B4BD0CF00CD58F8 /* Production */,
 				7B83AED72B4BD0CF00CD58F8 /* Products */,
+				7B1170B72B6E004900F6515F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +95,9 @@
 			dependencies = (
 			);
 			name = Production;
+			packageProductDependencies = (
+				7B1170B82B6E004900F6515F /* MainApp */,
+			);
 			productName = Production;
 			productReference = 7B83AED62B4BD0CF00CD58F8 /* Production.app */;
 			productType = "com.apple.product-type.application";
@@ -97,7 +110,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					7B83AED52B4BD0CF00CD58F8 = {
 						CreatedOnToolsVersion = 15.1;
@@ -181,6 +194,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -242,6 +256,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -269,6 +284,7 @@
 				CODE_SIGN_ENTITLEMENTS = Production/Production.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Production/Preview Content\"";
 				DEVELOPMENT_TEAM = 38BV25GUUS;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -307,6 +323,7 @@
 				CODE_SIGN_ENTITLEMENTS = Production/Production.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Production/Preview Content\"";
 				DEVELOPMENT_TEAM = 38BV25GUUS;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -359,6 +376,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B1170B82B6E004900F6515F /* MainApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainApp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B83AECE2B4BD0CF00CD58F8 /* Project object */;
 }
