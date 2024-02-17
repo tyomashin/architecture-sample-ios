@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Swift Package でもテンプレートを使用可能とするかどうか -->
+    <key>SupportsSwiftPackage</key>
+    <true/>
+	<!-- 必須キー。値は常に固定（FileTemplete か ProjectTemplete かの区別に使用 -->
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+
+	<!-- テンプレートファイルをサポートしたいプラットフォームを列挙 -->
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+		<string>com.apple.platform.macosx</string>
+	</array>
+
+	<!-- セクション内の並び順 -->
+	<key>SortOrder</key>
+	<string>1</string>
+
+	<!-- ウィンドウで表示されるテンプレートのアイコン種別 -->
+	<key>Image</key>
+	<dict>
+		<key>FileTypeIcon</key>
+		<string>swift</string>
+	</dict>
+
+	<!-- ウィザードで表示される項目を定義  -->
+	<key>Options</key>
+	<array>
+	<dict>
+		<!-- 入力された変数値を識別するためのID. -->
+		<!-- 以下の変数値をファイル名に含める場合、「___VARIABLE_Name___ViewController.swift」という指定になる -->
+		<key>Identifier</key>
+		<string>NAME</string>
+		<!-- 必須かどうか -->
+		<key>Required</key>
+		<true/>
+		<!-- ウィザードの入力項目欄の左側に表示される文言 -->
+		<key>Name</key>
+		<string>Name: </string>
+		<!-- ウィザードで入力させたいデータ種別。text, popup, checkbox がある -->
+		<key>Type</key>
+		<string>text</string>
+		<!-- ウィザードの入力欄に表示されるデフォルト値 -->
+		<key>Default</key>
+		<string>FeatureName</string>
+		<!-- ウィザードで入力された値を永続化するかどうか（次にウィザード表示した時に前回値が入力されるかどうか） -->
+		<key>NotPersisted</key>
+		<true/>
+	</dict>
+	<dict/>
+	</array>
+
+</dict>
+</plist>
