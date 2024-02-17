@@ -8,8 +8,8 @@ struct RootView<Presenter: RootPresentation>: View {
     @ObservedObject var presenter: Presenter
     
     var body: some View {
-        VStack {
-            Text("TODO: 実装")
+        ZStack {
+            AppContentViewControllerRepresentable()
         }
     }
 }

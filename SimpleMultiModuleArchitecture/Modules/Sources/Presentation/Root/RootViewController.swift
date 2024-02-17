@@ -20,6 +20,6 @@ public class RootViewController<Presenter: RootPresentation>: UIViewController, 
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        addFullScreenChildViewController(UIHostingController(rootView: RootView(presenter: presenter)))
+        addFullScreenChildViewController(UIHostingController(rootView: RootView(presenter: presenter)))        
     }
 }
