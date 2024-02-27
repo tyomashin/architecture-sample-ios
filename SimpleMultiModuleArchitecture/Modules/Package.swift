@@ -12,16 +12,21 @@ let package = Package(
         .library(name: "MainApp", targets: ["MainApp"]),
         .library(name: "Presentation", targets: ["Presentation"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/pointfreeco/swift-dependencies", exact: "1.2.1"),
+    ],
     targets: [
         .target(
             name: "MainApp",
             dependencies: [
-                "Presentation"
+                "Presentation",
             ]
         ),
         .target(
             name: "Presentation",
-            dependencies: []
+            dependencies: [
+                .product(name: "Dependencies", package: "swift-dependencies"),
+            ]
         ),
     ]
 )
