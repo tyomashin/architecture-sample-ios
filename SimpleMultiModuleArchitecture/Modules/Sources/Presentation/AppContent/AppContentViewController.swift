@@ -2,9 +2,12 @@
 
 import UIKit
 import SwiftUI
+import Dependencies
+
+public protocol AppContentViewControllerProtocol: UIViewController, ViewControllerProtocol {}
 
 /// アプリのコンテンツ画面
-public class AppContentViewController<Presenter: AppContentPresentation>: UIViewController, ViewControllerProtocol {
+public class AppContentViewController<Presenter: AppContentPresentation>: UIViewController, AppContentViewControllerProtocol {
     
     let presenter: Presenter
     
@@ -26,11 +29,8 @@ public class AppContentViewController<Presenter: AppContentPresentation>: UIView
 
 struct AppContentViewControllerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UINavigationController {
-        let router = AppContentRouter()
-        let presenter = AppContentPresenter(router: router)
-        let vc = AppContentViewController(presenter: presenter)
-        router.viewController = vc
-        return UINavigationController(rootViewController: vc)
+        @Dependency(\.createAppContentViewController) var createViewController
+        return UINavigationController(rootViewController: createViewController())
     }
     
     func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {}
