@@ -3,7 +3,9 @@
 import UIKit
 import SwiftUI
 
-public class ___VARIABLE_NAME___ViewController<Presenter: ___VARIABLE_NAME___Presentation>: UIViewController, ViewControllerProtocol {
+public protocol ___VARIABLE_NAME___ViewControllerProtocol: UIViewController, ViewControllerProtocol {}
+
+public class ___VARIABLE_NAME___ViewController<Presenter: ___VARIABLE_NAME___Presentation>: UIViewController, ___VARIABLE_NAME___ViewControllerProtocol {
     
     let presenter: Presenter
     
