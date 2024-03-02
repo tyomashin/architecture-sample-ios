@@ -29,8 +29,8 @@ public class AppContentViewController<Presenter: AppContentPresentation>: UIView
 
 struct AppContentViewControllerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UINavigationController {
-        @Dependency(\.appContentViewControllerCreator) var creator
-        return UINavigationController(rootViewController: creator())
+        @Dependency(\.createAppContentViewController) var createViewController
+        return UINavigationController(rootViewController: createViewController())
     }
     
     func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {}

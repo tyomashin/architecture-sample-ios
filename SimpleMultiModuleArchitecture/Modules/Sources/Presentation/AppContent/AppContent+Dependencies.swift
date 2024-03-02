@@ -15,7 +15,7 @@ public enum AppContentViewControllerKey: DependencyKey {
 }
 
 extension DependencyValues {
-    public var appContentViewControllerCreator: AppContentViewControllerCreator {
+    public var createAppContentViewController: AppContentViewControllerCreator {
         get { self[AppContentViewControllerKey.self] }
         set { self[AppContentViewControllerKey.self] = newValue }
     }
