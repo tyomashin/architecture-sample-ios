@@ -6,6 +6,6 @@ public protocol RootWireframe: WireframeProtocol {}
 
 public class RootRouter: RootWireframe {
     public weak var viewController: UIViewController?
-    
+
     public init() {}
 }

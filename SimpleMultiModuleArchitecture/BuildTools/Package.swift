@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "BuildTools",
-    platforms: [.macOS(.v13)],
+    platforms: [.macOS(.v11)],
     dependencies: [
         .package(url: "https://github.com/apple/swift-format", branch: "main"),
     ],

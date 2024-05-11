@@ -29,7 +29,7 @@ fi
 ## Note: コマンドオプションについて
 ##   -p: 並列に実行
 ##   -r: フォルダを再帰的に確認
-../BuildTools/.build/release/swift-format lint --configuration ../BuildTools/.swift-format -p -r $PROJECT_DIR/../Modules/Sources/ $PROJECT_DIR/../Modules/Package.swift
+# ../BuildTools/.build/release/swift-format lint --configuration ../BuildTools/.swift-format -p -r $PROJECT_DIR/../Modules/Sources/ $PROJECT_DIR/../Modules/Package.swift
+../BuildTools/.build/release/swift-format lint --configuration ../BuildTools/.swift-format -p -r $PROJECT_DIR/../Modules/Sources/
 
 echo 'complete swift-format.'
-

@@ -6,8 +6,8 @@ public protocol ViewControllerProtocol: UIViewController {
     func addFullScreenChildViewController(_ childViewController: UIViewController)
 }
 
-public extension ViewControllerProtocol {
-    func addFullScreenChildViewController(_ childViewController: UIViewController) {
+extension ViewControllerProtocol {
+    public func addFullScreenChildViewController(_ childViewController: UIViewController) {
         guard let childView = childViewController.view else { return }
         addChild(childViewController)
         childView.translatesAutoresizingMaskIntoConstraints = false
@@ -16,7 +16,7 @@ public extension ViewControllerProtocol {
             self.view.topAnchor.constraint(equalTo: childView.topAnchor),
             self.view.leadingAnchor.constraint(equalTo: childView.leadingAnchor),
             self.view.trailingAnchor.constraint(equalTo: childView.trailingAnchor),
-            self.view.bottomAnchor.constraint(equalTo: childView.bottomAnchor)
+            self.view.bottomAnchor.constraint(equalTo: childView.bottomAnchor),
         ])
         childViewController.didMove(toParent: self)
     }

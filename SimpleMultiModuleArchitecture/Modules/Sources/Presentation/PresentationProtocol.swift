@@ -8,14 +8,14 @@ import SwiftUI
 @MainActor @dynamicMemberLookup
 public protocol PresentationProtocol: ObservableObject {
     associatedtype ViewState
-    
+
     var viewState: ViewState { get }
-    
+
     subscript<Value>(dynamicMember keyPath: KeyPath<ViewState, Value>) -> Value { get }
 }
 
-public extension PresentationProtocol {
-    subscript<Value>(dynamicMember keyPath: KeyPath<ViewState, Value>) -> Value {
+extension PresentationProtocol {
+    public subscript<Value>(dynamicMember keyPath: KeyPath<ViewState, Value>) -> Value {
         get {
             self.viewState[keyPath: keyPath]
         }

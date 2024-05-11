@@ -5,11 +5,11 @@ import UIKit
 open class AppDelegate: UIResponder, UIApplicationDelegate {
     public final func application(
         _ application: UIApplication,
-        willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
+        willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         return true
     }
-    
+
     public final func application(
         _ application: UIApplication,
         configurationForConnecting connectingSceneSession: UISceneSession,
