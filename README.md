@@ -23,6 +23,7 @@ iOS アプリ開発で使用するためのアーキテクチャサンプルを�
 * GitHub Projects によるタスク管理・ガントチャート
 * GitHub Actions による CI/CD 実践
 * Xcode Templetes
+* その他
 
 ## GitHub Issue/PR の Templetes
 
@@ -51,3 +52,9 @@ TODO
 ## Xcode Templetes
 
 TODO
+
+## その他
+
+* `.gitignore`
+    * 以下に `.gitignore` のテンプレートが置かれているのでこれを使用する
+        * https://github.com/github/gitignore/tree/main
