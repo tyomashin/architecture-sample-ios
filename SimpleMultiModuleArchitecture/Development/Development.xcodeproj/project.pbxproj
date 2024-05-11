@@ -85,6 +85,7 @@
 			buildPhases = (
 				7B83AEB72B4BCFAE00CD58F8 /* Sources */,
 				7B83AEB82B4BCFAE00CD58F8 /* Frameworks */,
+				7B606D972BEFE58E00E460CA /* swift-format */,
 				7B83AEB92B4BCFAE00CD58F8 /* Resources */,
 			);
 			buildRules = (
@@ -143,6 +144,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B606D972BEFE58E00E460CA /* swift-format */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "swift-format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nsh $PROJECT_DIR/../BuildTools/Scripts/swift-format.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B83AEB72B4BCFAE00CD58F8 /* Sources */ = {
