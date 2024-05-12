@@ -28,5 +28,12 @@ let package = Package(
                 .product(name: "Dependencies", package: "swift-dependencies"),
             ]
         ),
+        .target(
+            name: "Common",
+            dependencies: [],
+            resources: [
+                .process("Resources")
+            ]
+        ),
     ]
 )
