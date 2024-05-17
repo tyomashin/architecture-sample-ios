@@ -8,7 +8,8 @@ open class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     public var window: UIWindow?
 
     public func scene(
-        _ scene: UIScene, willConnectTo session: UISceneSession,
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
         print("scenedelegate willConnectTo")

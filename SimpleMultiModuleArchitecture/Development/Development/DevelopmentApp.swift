@@ -2,8 +2,9 @@
 
 import SwiftUI
 import MainApp
+import MainAppKit
 
 @main
-final class AppDelegate: MainApp.AppDelegate {}
+final class AppDelegate: MainAppKit.AppDelegate {}
 
-final class SceneDelegate: MainApp.SceneDelegate {}
+final class SceneDelegate: MainAppKit.SceneDelegate {}
