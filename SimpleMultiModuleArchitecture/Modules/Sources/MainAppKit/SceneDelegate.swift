@@ -1,5 +1,6 @@
 // Created by okazakishinya on 2024/02/03.
 
+import Dependencies
 import Presentation
 import UIKit
 
@@ -18,7 +19,7 @@ open class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
 
         let router = RootRouter()
-        let vc = RootViewController(presenter: RootPresenter(router: router))
+        @Dependency(\.appRootViewController) var vc
         router.viewController = vc
         window.rootViewController = vc
         window.makeKeyAndVisible()

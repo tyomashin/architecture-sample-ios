@@ -20,6 +20,7 @@ let package = Package(
         .target(
             name: "MainAppKit",
             dependencies: [
+                .product(name: "Dependencies", package: "swift-dependencies"),
                 "Presentation",
             ]
         ),
