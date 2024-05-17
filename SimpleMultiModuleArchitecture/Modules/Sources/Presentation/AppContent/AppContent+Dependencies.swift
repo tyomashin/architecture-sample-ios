@@ -2,7 +2,8 @@
 
 import Dependencies
 
-public typealias AppContentViewControllerCreator = @MainActor () -> any AppContentViewControllerProtocol
+public typealias AppContentViewControllerCreator = @MainActor () ->
+    any AppContentViewControllerProtocol
 
 public enum AppContentViewControllerKey: DependencyKey {
     public static var liveValue: AppContentViewControllerCreator = {

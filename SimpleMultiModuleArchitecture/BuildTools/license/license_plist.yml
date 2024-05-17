@@ -1,0 +1,8 @@
+# You can validate the YAML config file at http://yaml-online-parser.appspot.com
+
+# General options
+manual:
+
+  # Specify license files manually
+  - name: "Dummy License File"
+    file: "dummy_license.txt"

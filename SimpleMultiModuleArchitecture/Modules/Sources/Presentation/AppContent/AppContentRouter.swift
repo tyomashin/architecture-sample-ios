@@ -6,6 +6,6 @@ public protocol AppContentWireframe: WireframeProtocol {}
 
 public class AppContentRouter: AppContentWireframe {
     public weak var viewController: UIViewController?
-    
+
     public init() {}
 }
