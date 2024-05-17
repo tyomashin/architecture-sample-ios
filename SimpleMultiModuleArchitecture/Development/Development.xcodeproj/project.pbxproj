@@ -11,6 +11,7 @@
 		7B83AEBF2B4BCFAE00CD58F8 /* DevelopmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AEBE2B4BCFAE00CD58F8 /* DevelopmentApp.swift */; };
 		7B83AEC32B4BCFB100CD58F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B83AEC22B4BCFB100CD58F8 /* Assets.xcassets */; };
 		7B83AEC72B4BCFB100CD58F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B83AEC62B4BCFB100CD58F8 /* Preview Assets.xcassets */; };
+		7B8C72722BF3C3F2003E34D5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C72712BF3C3F2003E34D5 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7B83AEC22B4BCFB100CD58F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B83AEC42B4BCFB100CD58F8 /* Development.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Development.entitlements; sourceTree = "<group>"; };
 		7B83AEC62B4BCFB100CD58F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B8C72712BF3C3F2003E34D5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Shared/Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		7B83AEB22B4BCFAE00CD58F8 = {
 			isa = PBXGroup;
 			children = (
+				7B8C72712BF3C3F2003E34D5 /* Settings.bundle */,
 				7B83AEBD2B4BCFAE00CD58F8 /* Development */,
 				7B83AEBC2B4BCFAE00CD58F8 /* Products */,
 				7B1170B42B6DFE9D00F6515F /* Frameworks */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B83AEC72B4BCFB100CD58F8 /* Preview Assets.xcassets in Resources */,
+				7B8C72722BF3C3F2003E34D5 /* Settings.bundle in Resources */,
 				7B83AEC32B4BCFB100CD58F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
