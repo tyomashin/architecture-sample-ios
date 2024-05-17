@@ -5,6 +5,7 @@ import SwiftUI
 
 public protocol AppRootPresentation: PresentationProtocol where ViewState == AppRootViewState {
     func viewDidLoad()
+    func presentLogin()
 }
 
 public struct AppRootViewState {}
@@ -21,11 +22,9 @@ public class AppRootPresenter<Router: AppRootWireframe>: AppRootPresentation {
 
     public func viewDidLoad() {
         router.presentSplash()
-        /*
-        Task {
-            try await Task.sleep(until: .now + .seconds(1))
-            router.presentSplash()
-        }
-         */
+    }
+
+    public func presentLogin() {
+        router.presentLogin()
     }
 }

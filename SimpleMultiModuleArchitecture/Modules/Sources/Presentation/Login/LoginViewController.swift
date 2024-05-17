@@ -3,9 +3,9 @@
 import SwiftUI
 import UIKit
 
-public protocol SplashViewControllerProtocol: UIViewController, ViewControllerProtocol {}
+public protocol LoginViewControllerProtocol: UIViewController, ViewControllerProtocol {}
 
-public class SplashViewController<Presenter: SplashPresentation>: UIViewController, SplashViewControllerProtocol {
+public class LoginViewController<Presenter: LoginPresentation>: UIViewController, LoginViewControllerProtocol {
 
     let presenter: Presenter
 
@@ -18,15 +18,9 @@ public class SplashViewController<Presenter: SplashPresentation>: UIViewControll
         fatalError("init(coder:) has not been implemented")
     }
 
-    deinit {
-        print("deinit SplashViewController")
-    }
-
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        addFullScreenChildViewController(UIHostingController(rootView: SplashView(presenter: presenter)))
-
-        presenter.viewDidLoad()
+        addFullScreenChildViewController(UIHostingController(rootView: LoginView(presenter: presenter)))
     }
 }
