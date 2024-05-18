@@ -1,7 +1,6 @@
 // Created by okazakishinya on 2024/01/08.
 
 import SwiftUI
-import MainApp
 import MainAppKit
 
 @main

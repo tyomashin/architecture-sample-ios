@@ -9,7 +9,7 @@ struct LoginView<Presenter: LoginPresentation>: View {
     var body: some View {
         VStack {
             Text("ログイン画面")
-            Text("index: \(presenter.index)")
+            Text("index: \(presenter.index ?? -1)")
 
             Button(
                 action: {
