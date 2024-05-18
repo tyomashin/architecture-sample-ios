@@ -6,6 +6,7 @@ import SwiftUI
 public protocol AppRootPresentation: PresentationProtocol where ViewState == AppRootViewState {
     func viewDidLoad()
     func presentLogin()
+    func presentTab()
 }
 
 public struct AppRootViewState {}
@@ -26,5 +27,9 @@ public class AppRootPresenter<Router: AppRootWireframe>: AppRootPresentation {
 
     public func presentLogin() {
         router.presentLogin()
+    }
+
+    public func presentTab() {
+        router.presentTab()
     }
 }

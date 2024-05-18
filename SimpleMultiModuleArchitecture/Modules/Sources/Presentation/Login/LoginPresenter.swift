@@ -23,7 +23,7 @@ public class LoginPresenter<Router: LoginWireframe>: LoginPresentation {
     }
 
     public func tapLoginButton() {
-
+        router.presentTab()
     }
 
     public func tapQAModalButton() {

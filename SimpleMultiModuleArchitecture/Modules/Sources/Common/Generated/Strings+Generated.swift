@@ -14,6 +14,16 @@ public enum L10n {
     /// サンプル
     public static let title = L10n.tr("Localizable", "sample.title", fallback: "サンプル")
   }
+  public enum Tab {
+    public enum Home {
+      /// ホーム
+      public static let title = L10n.tr("Localizable", "tab.home.title", fallback: "ホーム")
+    }
+    public enum Settings {
+      /// 設定
+      public static let title = L10n.tr("Localizable", "tab.settings.title", fallback: "設定")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

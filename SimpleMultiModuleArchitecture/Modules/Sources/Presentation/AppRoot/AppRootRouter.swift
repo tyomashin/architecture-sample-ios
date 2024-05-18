@@ -1,5 +1,6 @@
 // Created by okazakishinya on 2024/05/18.
 
+import Common
 import Dependencies
 import UIKit
 
@@ -33,5 +34,8 @@ public class AppRootRouter: AppRootWireframe {
 
     public func presentTab() {
         print("presentTab")
+        @Dependency(\.createTabViewController) var createViewController
+        let vc = createViewController()
+        viewController?.setChild(vc)
     }
 }

@@ -5,6 +5,7 @@ import UIKit
 
 public protocol LoginWireframe: WireframeProtocol {
     func presentQAModal(selectIndex: @escaping (Int) -> Void)
+    func presentTab()
 }
 
 public class LoginRouter: LoginWireframe {
@@ -17,5 +18,10 @@ public class LoginRouter: LoginWireframe {
         let vc = createViewController(selectIndex)
         vc.modalPresentationStyle = .pageSheet
         viewController?.present(UINavigationController(rootViewController: vc), animated: true)
+    }
+
+    public func presentTab() {
+        @Dependency(\.appRootViewController) var appRootViewController
+        appRootViewController.presenter.presentTab()
     }
 }
