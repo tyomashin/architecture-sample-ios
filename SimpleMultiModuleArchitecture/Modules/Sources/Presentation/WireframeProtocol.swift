@@ -2,6 +2,4 @@
 
 import UIKit
 
-@MainActor public protocol WireframeProtocol {
-    var viewController: UIViewController? { get }
-}
+@MainActor public protocol WireframeProtocol {}

@@ -26,7 +26,8 @@ public class AppContentViewController<Presenter: AppContentPresentation>: UIView
         super.viewDidLoad()
 
         addFullScreenChildViewController(
-            UIHostingController(rootView: AppContentView(presenter: presenter)))
+            UIHostingController(rootView: AppContentView(presenter: presenter))
+        )
     }
 }
 

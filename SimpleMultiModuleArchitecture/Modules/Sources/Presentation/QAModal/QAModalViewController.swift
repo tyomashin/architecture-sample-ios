@@ -1,12 +1,11 @@
-// Created by okazakishinya on 2024/02/04.
+// Created by okazakishinya on 2024/05/18.
 
 import SwiftUI
 import UIKit
 
-/// アプリのルート画面
-public class RootViewController<Presenter: RootPresentation>: UIViewController,
-    ViewControllerProtocol
-{
+public protocol QAModalViewControllerProtocol: UIViewController, ViewControllerProtocol {}
+
+public class QAModalViewController<Presenter: QAModalPresentation>: UIViewController, QAModalViewControllerProtocol {
 
     let presenter: Presenter
 
@@ -22,7 +21,6 @@ public class RootViewController<Presenter: RootPresentation>: UIViewController,
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        addFullScreenChildViewController(
-            UIHostingController(rootView: RootView(presenter: presenter)))
+        addFullScreenChildViewController(UIHostingController(rootView: QAModalView(presenter: presenter)))
     }
 }

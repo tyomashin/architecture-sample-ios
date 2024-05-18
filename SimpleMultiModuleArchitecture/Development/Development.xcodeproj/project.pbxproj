@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B1170B62B6DFE9D00F6515F /* MainApp in Frameworks */ = {isa = PBXBuildFile; productRef = 7B1170B52B6DFE9D00F6515F /* MainApp */; };
 		7B83AEBF2B4BCFAE00CD58F8 /* DevelopmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83AEBE2B4BCFAE00CD58F8 /* DevelopmentApp.swift */; };
 		7B83AEC32B4BCFB100CD58F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B83AEC22B4BCFB100CD58F8 /* Assets.xcassets */; };
 		7B83AEC72B4BCFB100CD58F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B83AEC62B4BCFB100CD58F8 /* Preview Assets.xcassets */; };
+		7B88DD562BF7C47700393353 /* MainAppKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7B88DD552BF7C47700393353 /* MainAppKit */; };
 		7B8C72722BF3C3F2003E34D5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C72712BF3C3F2003E34D5 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B1170B62B6DFE9D00F6515F /* MainApp in Frameworks */,
+				7B88DD562BF7C47700393353 /* MainAppKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			);
 			name = Development;
 			packageProductDependencies = (
-				7B1170B52B6DFE9D00F6515F /* MainApp */,
+				7B88DD552BF7C47700393353 /* MainAppKit */,
 			);
 			productName = Development;
 			productReference = 7B83AEBB2B4BCFAE00CD58F8 /* Development.app */;
@@ -423,9 +423,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7B1170B52B6DFE9D00F6515F /* MainApp */ = {
+		7B88DD552BF7C47700393353 /* MainAppKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MainApp;
+			productName = MainAppKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

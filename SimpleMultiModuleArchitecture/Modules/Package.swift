@@ -9,7 +9,7 @@ let package = Package(
         .iOS("17.0")
     ],
     products: [
-        .library(name: "MainApp", targets: ["MainApp"]),
+        .library(name: "MainAppKit", targets: ["MainAppKit"]),
         .library(name: "Presentation", targets: ["Presentation"]),
         .library(name: "Common", targets: ["Common"]),
     ],
@@ -18,8 +18,9 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "MainApp",
+            name: "MainAppKit",
             dependencies: [
+                .product(name: "Dependencies", package: "swift-dependencies"),
                 "Presentation",
             ]
         ),
