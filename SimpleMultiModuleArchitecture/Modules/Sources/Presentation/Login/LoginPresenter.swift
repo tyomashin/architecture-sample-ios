@@ -3,9 +3,14 @@
 import Combine
 import SwiftUI
 
-public protocol LoginPresentation: PresentationProtocol where ViewState == LoginViewState {}
+public protocol LoginPresentation: PresentationProtocol where ViewState == LoginViewState {
+    func tapLoginButton()
+    func tapQAModalButton()
+}
 
-public struct LoginViewState {}
+public struct LoginViewState {
+    var index: Int?
+}
 
 public class LoginPresenter<Router: LoginWireframe>: LoginPresentation {
     public let router: Router
@@ -15,5 +20,17 @@ public class LoginPresenter<Router: LoginWireframe>: LoginPresentation {
     public init(router: Router) {
         self.viewState = .init()
         self.router = router
+    }
+
+    public func tapLoginButton() {
+
+    }
+
+    public func tapQAModalButton() {
+        router.presentQAModal(selectIndex: selectedIndex)
+    }
+
+    public func selectedIndex(_ index: Int) {
+        viewState.index = index
     }
 }

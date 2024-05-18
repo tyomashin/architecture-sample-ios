@@ -3,9 +3,9 @@
 import SwiftUI
 import UIKit
 
-public protocol LoginViewControllerProtocol: UIViewController, ViewControllerProtocol {}
+public protocol QAModalViewControllerProtocol: UIViewController, ViewControllerProtocol {}
 
-public class LoginViewController<Presenter: LoginPresentation>: UIViewController, LoginViewControllerProtocol {
+public class QAModalViewController<Presenter: QAModalPresentation>: UIViewController, QAModalViewControllerProtocol {
 
     let presenter: Presenter
 
@@ -21,8 +21,6 @@ public class LoginViewController<Presenter: LoginPresentation>: UIViewController
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "ログイン"
-
-        addFullScreenChildViewController(UIHostingController(rootView: LoginView(presenter: presenter)))
+        addFullScreenChildViewController(UIHostingController(rootView: QAModalView(presenter: presenter)))
     }
 }

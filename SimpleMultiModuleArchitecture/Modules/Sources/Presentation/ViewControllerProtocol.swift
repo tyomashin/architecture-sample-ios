@@ -16,7 +16,7 @@ extension ViewControllerProtocol {
             self.view.topAnchor.constraint(equalTo: childView.topAnchor),
             self.view.leadingAnchor.constraint(equalTo: childView.leadingAnchor),
             self.view.trailingAnchor.constraint(equalTo: childView.trailingAnchor),
-            self.view.bottomAnchor.constraint(equalTo: childView.bottomAnchor),
+            self.view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: childView.bottomAnchor),
         ])
         childViewController.didMove(toParent: self)
     }

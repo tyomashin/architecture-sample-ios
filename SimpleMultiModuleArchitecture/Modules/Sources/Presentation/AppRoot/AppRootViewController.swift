@@ -51,7 +51,7 @@ public class AppRootViewController<Presenter: AppRootPresentation>: UIViewContro
         self.view.addSubview(childView)
         NSLayoutConstraint.activate([
             view.topAnchor.constraint(equalTo: childView.topAnchor),
-            view.bottomAnchor.constraint(equalTo: childView.bottomAnchor),
+            view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: childView.bottomAnchor),
             view.leadingAnchor.constraint(equalTo: childView.leadingAnchor),
             view.trailingAnchor.constraint(equalTo: childView.trailingAnchor),
         ])
@@ -69,7 +69,7 @@ public class AppRootViewController<Presenter: AppRootPresentation>: UIViewContro
             guard let self = self else { return }
             NSLayoutConstraint.activate([
                 self.view.topAnchor.constraint(equalTo: toView.topAnchor),
-                self.view.bottomAnchor.constraint(equalTo: toView.bottomAnchor),
+                self.view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: toView.bottomAnchor),
                 self.view.leadingAnchor.constraint(equalTo: toView.leadingAnchor),
                 self.view.trailingAnchor.constraint(equalTo: toView.trailingAnchor),
             ])

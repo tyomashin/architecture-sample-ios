@@ -28,7 +28,7 @@ public class AppRootRouter: AppRootWireframe {
         print("presentLogin")
         @Dependency(\.createLoginViewController) var createViewController
         let vc = createViewController()
-        viewController?.setChild(vc)
+        viewController?.setChild(UINavigationController(rootViewController: vc))
     }
 
     public func presentTab() {
