@@ -18,6 +18,10 @@ public class LoginViewController<Presenter: LoginPresentation>: UIViewController
         fatalError("init(coder:) has not been implemented")
     }
 
+    deinit {
+        print("deinit LoginViewController")
+    }
+
     public override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -22,6 +22,10 @@ public class LoginPresenter<Router: LoginWireframe>: LoginPresentation {
         self.router = router
     }
 
+    deinit {
+        print("deinit LoginPresenter")
+    }
+
     public func tapLoginButton() {
         router.presentTab()
     }

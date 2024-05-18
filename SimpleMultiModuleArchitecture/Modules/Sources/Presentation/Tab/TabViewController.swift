@@ -19,8 +19,14 @@ public class TabViewController<Presenter: TabPresentation>: UITabBarController, 
         fatalError("init(coder:) has not been implemented")
     }
 
+    deinit {
+        print("deinit TabViewController")
+    }
+
     public override func viewDidLoad() {
         super.viewDidLoad()
+
+        print("TabViewController viewDidLoad")
 
         self.view.backgroundColor = .blue
 
@@ -30,5 +36,11 @@ public class TabViewController<Presenter: TabPresentation>: UITabBarController, 
         self.tabBar.unselectedItemTintColor = Colors.placeholder.color
 
         presenter.viewDidLoad()
+    }
+
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        print("TabViewController viewDidAppear")
     }
 }

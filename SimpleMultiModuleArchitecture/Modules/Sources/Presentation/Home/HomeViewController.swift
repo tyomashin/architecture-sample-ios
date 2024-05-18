@@ -21,8 +21,16 @@ public class HomeViewController<Presenter: HomePresentation>: UIViewController, 
     public override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("HomeViewControllerProtocol viewDidLoad")
+
         self.title = "ホーム画面"
 
         addFullScreenChildViewController(UIHostingController(rootView: HomeView(presenter: presenter)))
+    }
+
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        print("HomeViewController viewDidAppear")
     }
 }

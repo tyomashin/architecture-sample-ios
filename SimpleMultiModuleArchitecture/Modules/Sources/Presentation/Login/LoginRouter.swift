@@ -13,6 +13,10 @@ public class LoginRouter: LoginWireframe {
 
     public init() {}
 
+    deinit {
+        print("deinit LoginRouter")
+    }
+
     public func presentQAModal(selectIndex: @escaping (Int) -> Void) {
         @Dependency(\.createQAModalViewController) var createViewController
         let vc = createViewController(selectIndex)

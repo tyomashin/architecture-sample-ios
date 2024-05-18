@@ -21,8 +21,16 @@ public class SettingsViewController<Presenter: SettingsPresentation>: UIViewCont
     public override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("SettingsViewController viewDidLoad")
+
         self.title = "設定画面"
 
         addFullScreenChildViewController(UIHostingController(rootView: SettingsView(presenter: presenter)))
+    }
+
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        print("SettingsViewController viewDidAppear")
     }
 }
