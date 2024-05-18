@@ -1,6 +1,8 @@
 BUILD_TOOLS_DIR := BuildTools
 
 build-cli:
+# Xcode 15.2 の コマンドラインツールでビルドする前提
+	echo 'Xcode 15.2 が必要です。xcodebuild -version コマンドでバージョンを確認してください。必要に応じて sudo xcode-select --switch を実行'
 	swift build -c release --package-path $(BUILD_TOOLS_DIR) --product swift-format
 	swift build -c release --package-path $(BUILD_TOOLS_DIR) --product swiftgen
 	swift build -c release --package-path $(BUILD_TOOLS_DIR) --product license-plist
